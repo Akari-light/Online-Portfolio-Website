@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Arvin Lum">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="My First Web Development Project">
+    <title>Home | Akari's Webpage</title>
+    <!--Initializing all required javascript and css modules.-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Avenir' rel='stylesheet'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Libre Baskerville' rel='stylesheet'>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="animate.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <script src="js/nav-active.js"></script>
+    <script src="js/include.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <!--Navbar-->
+    <div w3-include-html="navbar.html" id="top"></div>
+
+    <div class="sidebar">
+        <ul class="ul nav-menu">
+            <li><a href="comment.html disabled"><span class="icon-color" title="Leave me a comment!"><i class="far fa-comments fa-gradient"></i></span></a></li>
+            <li><a data-toggle="modal" data-target="#siteinfo"><span class="icon-color" title="What I do here?"><i class="fa fa-question fa-gradient"></i></span></a></li>
+            <li id="bottom"><a href="#top"><span class="icon-color"><i class="fa fa-chevron-up fa-gradient"></i></span></a></li>
+        </ul>
+    </div>
+
+    <!--Content-->
+    <div class="container-fluid contentbackground">
+        <div class="headerbox col-10 offset-1">
+            <div id="subheader">
+                <img id="home-pic" src="images\profile_pic2.jpg" alt=" ">
+                <h1 onmouseover="this.innerHTML='林宜永'" onmouseout="this.innerHTML='Arvin';">Arvin</h1>
+                <div class="profileborder"></div>
+                <h2>Polytechnic Student</h2>
+                <p class="cyberresume"><b>Check out my cyber resume too! <a id="resumebutton" href="pdf/resume.pdf" target="#">RESUME</a></b></p>
+            </div>
+        </div>
+        <div class="row contentbox col-10 offset-1">
+            <div class="contentspace col-md-2 col-sm-0 animated slideInDown"></div>
+            <div class="content col-md-8 col-sm-12 animated slideInDown">
+                <h2>Welcome to my website</h2>
+                <br />
+                <h3>CyberSecurity Specialist</h3>
+                <p>Nanyang Polytechnic | 01-01-2020</p>
+                <br />
+                <p>Hi! I am Arvin lum and I am a polytechnic student aspiring to be a Penetration Tester in the near future!<br /> Not only do I code, I can do simple Pen Testing in my virtual machine and I have a flair for mathematics.</p>
+            </div>
+            <div class="contentspace col-md-2 col-sm-0 animated slideInDown"></div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <div w3-include-html="footer.html"></div>
+    </footer>
+
+    <!--Site Info Modal-->
+    <div w3-include-html="sitemodal.html"></div>
+
+    <script>
+        includeHTML();
+    </script>
+
+</body>
+</html>

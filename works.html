@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Arvin Lum">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="My First Web Development Project">
+    <title>Works | Akari's Webpage</title>
+    <!--Initializing all required javscript and css modules.-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Avenir' rel='stylesheet'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Libre Baskerville' rel='stylesheet'>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="animate.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <script src="js/nav-active.js"></script>
+    <script src="js/include.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <!--NavBar-->
+    <div w3-include-html="navbar.html"></div>
+
+    <div class="sidebar">
+        <ul class="ul nav-menu">
+            <li><a href="comment.html"><span class="icon-color" title="Leave me a comment!"><i class="far fa-comments fa-gradient"></i></span></a></li>
+            <li><a data-toggle="modal" data-target="#siteinfo"><span class="icon-color" title="What I do here?"><i class="fa fa-question fa-gradient"></i></span></a></li>
+        </ul>
+    </div>
+
+    <!--Content-->
+    <div class="containerfluid contentbackground">
+        <div class="row">
+            <div id="workdisplay">
+                <section id="work-front">
+                    <div id="codeframe" class="animated slideInRight">
+                        <div id="img-work">
+                            <img class="animated rotateIn delay-1s" src="images/binary_bg.jpg" id="testimage" width="175" height="175" alt="" />
+                        </div>
+                        <h1 id="worktitle">Free Time Codes</h1>
+                        <p id="info">I'm still familiarising myself with coding. Thus, I do not have any works to show for now.<br> Do take a look at the codes I made for practice. </p>
+                    </div>
+                </section>
+                <section id="work-back" class="col-sm-10 offset-sm-1 col-lg-8 offset-lg-2">
+                    <div class="titletext">Exercises</div>
+                    <div id="codedisplay">
+                        <a href="https://github.com/Akari-light/Fundamental_Practice_Works/blob/master/C%2B%2B%20Projects/BaseConversionExercise2.0/main.cpp" target="_blank" class="btn draw-border">Base Conversion</a>
+                        <a href="https://github.com/Akari-light/Fundamental_Practice_Works/blob/master/C%2B%2B%20Projects/PhoneBookExerciseWithPointers/main.cpp" target="_blank" class="btn draw-border">Phonebook</a>
+                        <a href="https://github.com/Akari-light/Fundamental_Practice_Works/blob/master/C%2B%2B%20Projects/NumberToTextConversion/main.cpp" target="_blank" class="btn draw-border">Number To Text Conversion </a>
+                        <a href="https://github.com/Akari-light/Fundamental_Practice_Works/blob/master/C%2B%2B%20Projects/VendingMachine/main.cpp" target="_blank" class="btn draw-border">Vending Machine</a>
+                        <a href="https://github.com/Akari-light/Fundamental_Practice_Works/tree/master/C%2B%2B%20Projects" target="_blank" class="btn draw-border">Other C++ projects</a>
+                        <a href="https://github.com/Akari-light/Fundamental_Practice_Works/tree/master/Python%20Projects" target="_blank" class="btn draw-border">Python projects</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <div w3-include-html="footer.html"></div>
+    </footer>
+
+    <!--Site Info Modal-->
+    <div w3-include-html="sitemodal.html"></div>
+
+    <script>
+        includeHTML();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Arvin Lum">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My First Web Development Project">
+    <title>Myself | Akari's Webpage</title>
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <!--Initializing all required javscript and css modules.-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Avenir' rel='stylesheet'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Libre Baskerville' rel='stylesheet'>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="animate.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <script src="js/nav-active.js"></script>
+    <script src="js/include.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <!--NavBar-->
+    <div w3-include-html="navbar.html" id="top"></div>
+
+    <div class="sidebar">
+        <ul class="ul nav-menu">
+            <li><a href="comment.html" class="disabled"><span class="icon-color" title="Leave me a comment!"><i class="far fa-comments fa-gradient"></i></span></a></li>
+            <li><a data-toggle="modal" data-target="#siteinfo"><span class="icon-color" title="What I do here?"><i class="fa fa-question fa-gradient"></i></span></a></li>
+            <li><a href="#skill"><span class="icon-color" title="Skills"><i class="fas fa-anchor fa-gradient"></i></span></a></li>
+            <li><a href="#accolade"><span class="icon-color" title="Accolades"><i class="fas fa-trophy fa-gradient"></i></span></a></li>
+            <li id="bottom"><a href="#top"><span class="icon-color"><i class="fa fa-chevron-up fa-gradient"></i></span></a></li>
+        </ul>
+    </div>
+
+    <!--Content-->
+    <div class="container-fluid contentbackground">
+        <div class="aboutphoto animated flipInX">
+            <img src="images\me_photo.jpeg" height="400" alt=" " />
+        </div>
+
+        <div class="row" id="profile">
+            <div class="col-md-8 col-10 offset-md-2 offset-1" id="profilebox">
+                <div class="titletext animated fadeInLeft">About</div>
+                <p class="details animated fadeInLeft delay-1s">
+                    At the start of 2019, I was introduced to the skill known as 'programming' and I really enjoyed the problem solving aspect of a code. It was as if mathematics and programming was cut from the same cloth, so I was able to quickly comprehend basic programming techniques with the help of a mentor. I started by indulging myself in online Capture-The-Flag(CTF) challenges and built my knowledge by reading write-ups or watching youtube on how experts solve computer security problems. I also looked out for cybersecurity programmes that could teach me more about the course.<br>
+                    <br>
+                    My participation in the Youth-Cyber-Exploration-Programme during my mid-year breaks in 2019 was the fuel to spark my passion for CyberSecurity. Throughout the program, I found myself having tons of fun picking up skills and achieving Top 10 Winner Award along with 2nd Runner-Up in the CTF competition with my teammates played a huge role in my resolution as it highlighted my ability to pursue this career.<br>
+                    <br>
+                    Despite having to fix millions of bugs that would regularly appear on my programmes or having to crack my brains to solve CTF challenges, my passion for it only seems to get stronger every day.<br>
+                </p>
+            </div>
+        </div>
+
+        <!---Skills-->
+        <div class="row" id="skill">
+            <div class="col-md-8 col-10 offset-md-2 offset-1" id="skillsbox">
+                <div class="skillsleft animated fadeInLeft delay-1s">
+                    <div class="titletext">Skills</div>
+                    <ul id="skillsbullet">
+                        <li>CyberSecurity</li>
+                        <li>Web Development</li>
+                        <li>Digital Forensics</li>
+                        <li>Leadership</li>
+                        <li>Problem Solving</li>
+                    </ul>
+                    <br>
+                    <h4>Programming Languages</h4>
+                    <ul id="profilebullet">
+                        <li>C++<div class="meter"><span style="width: 40%"></span></div></li>
+                        <li>Python<div class="meter"><span style="width: 25%"></span></div></li>
+                        <li>HTML/CSS/Javascript<div class="meter"><span style="width: 50%"></span></div></li>
+                    </ul>
+                    <br>
+                    <h4>Human Languages</h4>
+                    <ul id="profilebullet">
+                        <li>English (Native)</li>
+                        <li>Chinese (Native)</li>
+                    </ul>
+                </div>
+                <div class="skillsright animated fadeInRight delay-1s">
+                    <h4>Softwares and Others</h4>
+                    <ul id="profilebullet">
+                        <li>Kali Linux<div class="meter" id="right"><span id="orange" style="width: 65%"></span></div></li>
+                        <li>Visual Studio<div class="meter" id="right"><span id="orange" style="width: 85%"></span></div></li>
+                        <li>Forensics<div class="meter" id="right"><span id="orange" style="width: 69%"></span></div></li>
+                        <li>Cryptography<div class="meter" id="right"><span id="orange" style="width: 62%"></span></div></li>
+                        <li>Web Exploitation<div class="meter" id="right"><span id="orange" style="width: 59%"></span></div></li>
+                        <li>Binary Exploitation<div class="meter" id="right"><span id="orange" style="width: 20%"></span></div></li>
+                        <li>Reverse Engineering<div class="meter" id="right"><span id="orange" style="width: 34%"></span></div></li>
+                        <li>Network Security<div class="meter" id="right"><span id="orange" style="width: 45%"></span></div></li>
+                        <li>Server Administration(Bash Scripting)<div class="meter" id="right"><span id="orange" style="width: 20%"></span></div></li>
+                        <li>Microsoft Office<div class="meter" id="right"><span id="orange" style="width: 50%"></span></div></li>
+                        <li>Linux Distros (Debian)<div class="meter" id="right"><span id="orange" style="width: 60%"></span></div></li>
+                        <li>Knowledge in network structure<div class="meter" id="right"><span id="orange" style="width: 15%"></span></div></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--Accolades-->
+        <div class="row" id="accolade">
+            <div class="col-md-8 col-10 offset-md-2 offset-1" id="accoladebox">
+                <!--Education, Clubs & CCA-->
+                <div class="accoladeleft animated fadeInLeft delay-1s">
+                    <div id="education">
+                        <div class="titletext">Education</div>
+                        <h4>Secondary School</h4>
+                        <p>Cambridge General Certificate of Education, “O-Level”<br>Mayflower Secondary School, 2019</p>
+                        <p>Cambridge General Certificate of Education, “N-Level”<br>Mayflower Secondary School, 2018</p>
+                        <h4>Primary School</h4>
+                        <p>Singapore Primary School Leaving Examination<br>Rosyth Primary School, 2014</p>
+                    </div>
+                    <div id="clubsandcca">
+                        <div class="titletext">Clubs & CCA</div>
+                        <h4>School</h4>
+                        <p> Basketball CCA</p>
+                        <h4>Outside School</h4>
+                        <p>  Hack All Things Society (HATS)<br>Cyber Youth Singapore (CYS)</p>
+                    </div>
+                </div>
+                <!--Achievements-->
+                <div class="accoladeright animated fadeInRight delay-1s">
+                    <div class="titletext">Achievements</div>
+                    <h4>Course-related</h4>
+                    <ul id="accoladebullet">
+                        <li>Cyber Youth Singapore (CYS) Capture-The-Flag Competition 4th place<br>16-19 Dec 2019</li>
+                        <li>Singtel Cyber Challenge – Level 1<br>16 July 2019</li>
+                        <li>Singtel Cyber Experience<br>11 July 2019</li>
+                        <li>YCEP Central Capture-The-Flag Competition 2nd place in Team Category<br>29 June 2019</li>
+                        <li>YCEP Central Capture-The-Flag Competition 5th place in the Individual Category<br>28 June 2019</li>
+                        <li>StrITwise® YCEP Challenge Competition 3rd place<br>21 June 2019</li>
+                        <li>StrITwise® YCEP Top 10 Winner<br>18-21 June 2019</li>
+                    </ul>
+                    <h4>In-School</h4>
+                    <ul id="accoladebullet">
+                        <li>Term 3 Best Team Player<br>2019</li>
+                        <li>Term 1 Best Team Player<br>2019</li>
+                        <li>Best in Additional Mathematics Secondary Four Normal(Academic)<br>2018</li>
+                        <li>Best in Science(Physics/Chemistry) Secondary Four Normal(Academic)<br>2018</li>
+                        <li>Edusave Merit Bursary<br>2018</li>
+                        <li>Best in Additional Mathematics Secondary Three Normal(Academic)<br>2017</li>
+                        <li>T-Net Club Basketball Tournament Champion<br>2017</li>
+                        <li>Edusave Merit Bursary<br>2017</li>
+                        <li>Best in Mathematics Secondary Two Normal(Academic)<br>2016</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <div w3-include-html="footer.html"></div>
+    </footer>
+
+    <!--Site Info Modal-->
+    <div w3-include-html="sitemodal.html"></div>
+
+    <script>
+        includeHTML();
+    </script>
+
+</body>
+</html>

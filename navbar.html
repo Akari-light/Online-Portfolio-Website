@@ -1,0 +1,55 @@
+﻿<style>
+    .navbar {
+        border-bottom: 1px solid #ddd;
+    }
+
+    .navfont a {
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 4px;
+    }
+
+    .navfont a .homeicon {
+        font-size: 1.2em;
+    }
+
+    .navfont li {
+        padding: 5px;
+    }
+
+    .sitelogo {
+        margin-left: 10%;
+    }
+
+    @media only screen and (max-width:991px) {
+        .sitelogo {
+            margin: 0;
+        }
+    }
+
+</style>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <a class="navbar-brand sitelogo" href="index.html">
+        <img src="images/logo_transparent.png" width="90" height="60" class="d-inline-block align-centre" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto navfont">
+            <li class="nav-item active">
+                <a class="nav-link homeicon" href="index.html"><i class="fa fa-home"></i><span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="myself.html">ABOUT</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="works.html">WORKS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">CONTACT</a>
+            </li>
+        </ul>
+    </div>
+</nav>
